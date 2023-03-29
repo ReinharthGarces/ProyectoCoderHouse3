@@ -7,7 +7,7 @@ function Navbar (props) {
   return (
     <div>
       <nav>
-        <h1>Reinharth Garces</h1>
+        <h1>ReinharthGarces</h1>
       <ul>
         <li>Nosotros</li>
         <li>Productos</li>

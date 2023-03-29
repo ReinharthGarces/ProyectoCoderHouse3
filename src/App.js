@@ -8,7 +8,7 @@ function App (props) {
   return (
     <div>
     <Header />
-    <ItemListContainer greeting={'Bienvenidos a mi proyecto con REACT'} />
+    <ItemListContainer greeting={'Bienvenidos a mi proyecto con REACT JS'} />
     </div>
   );
 }
