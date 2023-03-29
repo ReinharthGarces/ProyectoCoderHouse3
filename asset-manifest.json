@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ProyectoCoderHouse3/static/css/main.073c9b0a.css",
+    "main.js": "/ProyectoCoderHouse3/static/js/main.cd9e8837.js",
+    "static/js/787.4eab6a7f.chunk.js": "/ProyectoCoderHouse3/static/js/787.4eab6a7f.chunk.js",
+    "static/media/logo.svg": "/ProyectoCoderHouse3/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ProyectoCoderHouse3/index.html",
+    "main.073c9b0a.css.map": "/ProyectoCoderHouse3/static/css/main.073c9b0a.css.map",
+    "main.cd9e8837.js.map": "/ProyectoCoderHouse3/static/js/main.cd9e8837.js.map",
+    "787.4eab6a7f.chunk.js.map": "/ProyectoCoderHouse3/static/js/787.4eab6a7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.cd9e8837.js"
+  ]
+}
