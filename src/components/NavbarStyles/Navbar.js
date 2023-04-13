@@ -1,5 +1,6 @@
 import NavbarStyles from "./Navbar.module.css";
 import CartWidget from "../CartWidget/CartWidget";
+// import {Navlink} from 'react-router-dom';
 
 <NavbarStyles />
 function Navbar (props) {
@@ -18,5 +19,8 @@ function Navbar (props) {
     </div>
     )
   } 
+
+  // <NavLink to = {"/"}> home</NavLink>
+
 
   export default Navbar;
