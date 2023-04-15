@@ -5,7 +5,8 @@ a {
 
 nav {
     display: flex;
-    background-color: #5F8D4E;
+    background: rgb(57,111,66);
+    background: linear-gradient(78deg, rgba(57,111,66,1) 40%, rgba(95,141,78,1) 71%, rgba(229,217,182,1) 100%); 
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -25,9 +26,13 @@ nav ul a{
   list-style: none;
   font-weight: bold;
   margin-top: 10vh;
-  padding: 1.3vw;
+  padding: 1.1vw;
   font-size: 1.2rem;
   text-shadow: 0.5px 0.5px white;
+  border-radius: 10px;
 }
 
-
+nav ul a:hover {
+  background-color: rgba(95,141,78,1); 
+  border: 2px solid #285430;;
+}

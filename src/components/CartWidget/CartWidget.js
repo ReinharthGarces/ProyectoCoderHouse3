@@ -12,11 +12,12 @@ const CartWidget = () => {
           cursor: "pointer",
           backgroundColor: "#E5D9B6",
           border: "2px solid #285430"
-        }}>        
+        }}>       
           <img src={cart} alt="cart-widget"/>
           0
         </button>
     )
 }
+
 
 export default CartWidget

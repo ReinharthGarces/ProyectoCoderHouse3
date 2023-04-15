@@ -8,7 +8,7 @@ function Navbar (props) {
   return (
     <div>
       <nav>
-        <Link to='/'><h1>Garces-Electronics!</h1></Link>
+        <Link to='/'><h1>Reinharth-Electronics!</h1></Link>
       <ul>
         <NavLink to={'/category/Telefonos'} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Telefonos</NavLink>
         <NavLink to={'/category/Notebooks'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Notebooks</NavLink>
