@@ -1,4 +1,4 @@
-import Navbar from "./NavbarStyles/Navbar";
+import Navbar from "./Navbar/Navbar";
 
 function Header(props) {
   return (

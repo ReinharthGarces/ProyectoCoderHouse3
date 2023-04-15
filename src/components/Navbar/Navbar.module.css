@@ -1,0 +1,32 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 15vh;
+    padding: 1rem;
+  }
+
+nav h1 {
+  font-size: 2.5rem;
+  padding: 1.8vw;
+  text-shadow: 1px 1px white;
+}
+
+nav ul a{
+  display: inline-block;
+  list-style: none;
+  font-weight: bold;
+  margin-top: 10vh;
+  padding: 1.3vw;
+  font-size: 1.2rem;
+  text-shadow: 0.5px 0.5px white;
+}
+
+

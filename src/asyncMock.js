@@ -1,32 +1,32 @@
 const products = [
   {
     id: '001',
-    name: 'TV 60',
+    name: 'Iphone 13 Pro Max',
     price: 9000,
-    category: 'Televisores',
+    category: 'Telefonos',
     // img: '',
     stock: 20,
-    description: 'TV Qled de 60'
+    description: 'Apple iPhone 13 Pro Max (256 GB)'
   },
 
   {
     id: '002',
-    name: 'TV 50',
+    name: 'Asus zenbook',
     price: 7000,
-    category: 'Televisores',
+    category: 'Notebooks',
     // img: '',
     stock: 30,
-    description: 'TV Qled de 50'
+    description: 'Notebook Asus Zenbook Duo I7 16 Gb 1t Win11'
   },
 
   {
     id: '003',
-    name: 'TV 40',
+    name: 'Smart TV LG 60',
     price: 5000,
     category: 'Televisores',
     // img: '',
     stock: 10,
-    description: 'TV Qled de 40'
+    description: 'Smart TV LG AI ThinQ 60UP7750PSB LCD webOS 6.0 4K 60" 100V/240V'
   }
 ]
 
@@ -44,4 +44,13 @@ export const getProductById = (productId) => {
       resolve(products.find(prod => prod.id === productId))
     }, 400)
   })
+}
+
+export const getProductByCategory = (productoCategory) => {
+  return new Promise ((resolve) => {
+    setTimeout (() => {
+      resolve(products.find(prod => prod.category === productoCategory))
+    }, 400)
+  })
+  
 }
