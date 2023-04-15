@@ -4,7 +4,7 @@ const products = [
     name: 'Iphone 13 Pro Max',
     price: 9000,
     category: 'Telefonos',
-    // img: '',
+    img: './images/Iphone13-ProMax256gb.jpg',
     stock: 20,
     description: 'Apple iPhone 13 Pro Max (256 GB)'
   },
@@ -49,7 +49,7 @@ export const getProductById = (productId) => {
 export const getProductByCategory = (productoCategory) => {
   return new Promise ((resolve) => {
     setTimeout (() => {
-      resolve(products.find(prod => prod.category === productoCategory))
+      resolve(products.filter(prod => prod.category === productoCategory))
     }, 400)
   })
   
