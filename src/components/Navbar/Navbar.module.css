@@ -5,12 +5,13 @@ a {
 
 nav {
     display: flex;
-    background-color: green;
+    background-color: #5F8D4E;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    height: 15vh;
+    height: 20vh;
     padding: 1rem;
+    border-bottom: 4px solid #285430;
   }
 
 nav h1 {

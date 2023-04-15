@@ -1,9 +1,9 @@
-// import styles from './Itemlist.module.css';
+import styles from './ItemList.module.css';
 import Item from '../Item/item';
 
 const ItemList = ({ products }) => {
   return (
-    <div className="ListGroup">
+    <div className={styles.ListGroup}>
       {products.map(prod => <Item key={prod.id}{...prod} />)}
     </div>
   )

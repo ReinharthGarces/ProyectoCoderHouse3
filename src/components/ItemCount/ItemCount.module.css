@@ -1,0 +1,29 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.buttomContador {
+  align-self: center;
+  background-color: #5F8D4E;
+  border-radius: 10px;
+  width: 2vw;
+  height: 5vh;
+  cursor: pointer;
+  border: 2px solid #285430;
+}
+
+.number {
+  margin: 2vw;
+}
+.agregarAlCarrito {
+  background-color: #5F8D4E;
+  border-radius: 10px;
+  padding: 4%;
+  width: 7vw;
+  height: 6vh;
+  cursor: pointer;
+  border: 2px solid #285430;
+}
