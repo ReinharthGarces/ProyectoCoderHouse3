@@ -8,7 +8,7 @@ const Item = ({id, name, img, price, stock}) => {
         <h2 className="ItemHeader">{name}</h2>
       </header>
       <picture>
-        <img src={img} height={250} width={270} alt={name} className={styles.ItemImg}/>
+        <img src={process.env.PUBLIC_URL+img} height={250} width={270} alt={name} className={styles.ItemImg}/>
       </picture>
       <section>
         <p className={styles.Info}><strong>Precio:</strong> ${ price }</p>

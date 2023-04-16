@@ -9,7 +9,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
       </header>
 
       <picture>
-        <img src={img} alt={name} className={styles.ItemImg}/>
+        <img src={process.env.PUBLIC_URL+img} alt={name} className={styles.ItemImg}/>
       </picture>
 
       <section>
