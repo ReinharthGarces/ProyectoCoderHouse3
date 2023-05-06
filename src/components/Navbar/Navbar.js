@@ -3,8 +3,7 @@ import CartWidget from "../CartWidget/CartWidget";
 import { NavLink, Link } from 'react-router-dom';
 
 <NavbarStyles />
-function Navbar (props) {
-  console.log(props)
+function Navbar ( {greeting} ) {
   return (
     <div>
       <nav>
