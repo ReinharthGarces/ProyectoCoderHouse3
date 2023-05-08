@@ -12,12 +12,10 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
     const handleOnAdd = (quantity) => {
       setQuantityAdded(quantity)
   
-    const item = {id, name, img, category, description, price, stock}
+    const item = { id, name, price }
 
     addItem(item, quantity)
   }
-
-console.log(ItemDetail)
 
   return (
     <article className={styles.CardItem}>
@@ -26,7 +24,7 @@ console.log(ItemDetail)
       </header>
 
       <picture>
-        <img src={process.env.PUBLIC_URL+img} alt={name} className={styles.ItemImg}/>
+        <img src={img} alt={name} className={styles.ItemImg}/>
       </picture>
 
       <section>
@@ -36,7 +34,7 @@ console.log(ItemDetail)
       </section>
 
       <footer className={styles.ItemFooter}>
-        {quantityAdded > 0 ? (<Link to = '/cart' className = "Option"> Ir al carrito...</Link>) 
+        {quantityAdded > 0 ? (<Link to = '/cart' className = {styles.irAlCarrito}> Ir al carrito...</Link>) 
         :
         (<ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />)
         }

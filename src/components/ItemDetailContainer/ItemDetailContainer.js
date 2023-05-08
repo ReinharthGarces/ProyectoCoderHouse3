@@ -15,6 +15,7 @@ const ItemDetailContainer = ( {greeting} ) => {
     setLoading(true)
 
     const docRef = doc(db, 'products', itemId)
+    console.log(docRef)
 
     getDoc(docRef)
     .then(response => {
@@ -32,7 +33,7 @@ const ItemDetailContainer = ( {greeting} ) => {
 
   if (loading) {
     return (
-    <div>Cargando...</div>
+      <div className={styles.loading}>Cargando...</div>
     )
   }
 

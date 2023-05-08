@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 8vh 50vh;
+    margin: 1vh 50vh;
+    margin-bottom: 17vh;
     background-color: #E5D9B6;
     border-radius: 10px;
     padding: 2vw;
@@ -19,4 +20,17 @@
 
 .ItemFooter {
   margin-top: 10px;
+}
+
+.irAlCarrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5F8D4E;
+  border-radius: 10px;
+  padding: 7%;
+  width: 7vw;
+  height: 3vh;
+  cursor: pointer;
+  border: 2px solid #285430;
 }
