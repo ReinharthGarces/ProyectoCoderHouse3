@@ -7,7 +7,7 @@ function Navbar () {
   return (
     <div>
       <nav>
-        <Link to='/'><h1>Reinharth-Electronics!</h1></Link>
+        <Link to='/ProyectoCoderHouse3'><h1>Reinharth-Electronics!</h1></Link>
       <ul>
         <NavLink to={'/category/Telefonos'} className={({ isActive}) => isActive ? styles.ActiveOption : 'Option'}>Telefonos</NavLink>
         <NavLink to={'/category/Notebooks'} className={({isActive}) => isActive ? styles.ActiveOption : 'Option'}>Notebooks</NavLink>

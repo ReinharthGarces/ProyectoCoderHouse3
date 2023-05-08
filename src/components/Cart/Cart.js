@@ -12,7 +12,7 @@ const Cart = () => {
     return (
       <div>
         <h1>Carrito Vacio</h1>
-        <Link to = '/' className= "Option">Productos</Link>
+        <Link to = '/ProyectoCoderHouse3' className= "Option">Productos</Link>
       </div>
     )
   }

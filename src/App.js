@@ -18,7 +18,7 @@ function App () {
       <CartProvider>
         <Header />
         <Routes>
-          <Route path='/' element={ <ItemListContainer greeting = {'Listado de productos'}/> }/>
+          <Route path='/ProyectoCoderHouse3' element={ <ItemListContainer greeting = {'Listado de productos'}/> }/>
           <Route path='/category/:categoryId' element={ <ItemListContainer /> }/>
           <Route path='/item/:itemId' element={ <ItemDetailContainer greeting = { "Detalle del producto" }/> }/>
           <Route path='/cart' element={ <Cart /> }/>
