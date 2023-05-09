@@ -53,7 +53,7 @@ const Checkout = () =>{
       if(outOfStock.length === 0) {
         await batch.commit()
 
-        const orderRef = collection(db, 'orders')
+        const orderRef = collection(db, 'orders').doc() 
         const orderAdded = await addDoc(orderRef, objOrder)
 
         setOrderId(orderAdded.id)
@@ -83,3 +83,4 @@ const Checkout = () =>{
   )
 }
 export default Checkout;
+

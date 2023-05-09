@@ -20,10 +20,16 @@ const Cart = () => {
   console.log(totalQuantity)
   return(
     <div>
+      <div className={styles.carrito}>
+      <h2 className={styles.tittle}>Productos en carrito</h2>
       { cart.map(p => <CartItem key={p.id} {...p }/>) }
-      <h3>Total: ${total}</h3>
-      <button onClick= {() => clearCart()} className="Button">Vaciar carrito</button>
-      <Link to='/checkout' className={styles.Option}>Ir a comprar</Link>
+      <h3 className={styles.total}>Total: ${total}</h3>
+      </div>
+
+      <div className={styles.buttons}>
+      <button onClick= {() => clearCart()} className={styles.vaciarCarrito}>Vaciar carrito</button>
+      <Link to='/checkout' className={styles.comprar}>Ir a comprar</Link>
+      </div>
     </div>
   )
 }

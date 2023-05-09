@@ -19,24 +19,27 @@ const CheckoutForm = ({ onConfirm }) => {
   return (
     <div className='Container'>
       <form onSubmit={handleConfirm} className='Form'> 
-        <label className='Label'> Nombre
+        <label className='Label'> <strong>Nombre:</strong> 
           <input 
-          className='Input'
-          type='text'
-          value={name}
-          onChange={({target}) => setName(target.value)}
+            placeholder='Ingrese su nombre...'
+            className='Input'
+            type='text'
+            value={name}
+            onChange={({target}) => setName(target.value)}
           />
         </label>
-        <label className='Label'> Telefono
+        <label className='Label'> <strong>Telefono:</strong>
           <input 
+            placeholder='Ingrese numero telefonico...'
             className='Input'
             type='text'
             value={phone}
             onChange={({target}) => setPhone(target.value)}
           />
         </label>
-        <label className='Label'> Email
+        <label className='Label'> <strong>Email:</strong>
           <input 
+            placeholder='Ingrese su email...'
             className='Input'
             type='email'
             value={email}
