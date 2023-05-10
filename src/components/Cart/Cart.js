@@ -10,15 +10,14 @@ const Cart = () => {
 
   if (totalQuantity === 0) {
     return (
-      <div>
+      <div className={styles.emptyCart}>
         <h1 className={styles.tittle}>Carrito Vacio</h1>
-        <img src='https://i.postimg.cc/jdyX6dWv/Carrito-Vacio.gif' className={styles.gif}/>
-        <Link to = '/ProyectoCoderHouse3' className={styles.irA}>ir al inicio...</Link>
+        <img src='https://i.postimg.cc/jdyX6dWv/Carrito-Vacio.gif' className={styles.gif}></img>
+        <Link to = '/ProyectoCoderHouse3' className={styles.irAHome}>ir al inicio...</Link>
       </div>
     )
   }
 
-  console.log(totalQuantity)
   return(
     <div>
       <div className={styles.carrito}>

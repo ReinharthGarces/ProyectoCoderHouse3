@@ -9,7 +9,7 @@ const Checkout = () =>{
   const [loading, setLoading] = useState(false)
   const [ orderId, setOrderId] = useState("")
 
-  const { cart, total, clearCart } = useContext(CartContext)
+  const { cart, calculateTotalPrice, clearCart } = useContext(CartContext)
 
   const createOrder = async ({name, phone, email}) => {
     setLoading(true)
@@ -20,10 +20,11 @@ const Checkout = () =>{
           name, phone, email
         },
         items: cart,
-        total: total,
+        total: calculateTotalPrice(),
         date: Timestamp.fromDate(new Date())
       }
 
+      console.log(objOrder)
       const batch = writeBatch(db)
 
       const outOfStock = []
@@ -53,7 +54,7 @@ const Checkout = () =>{
       if(outOfStock.length === 0) {
         await batch.commit()
 
-        const orderRef = collection(db, 'orders').doc() 
+        const orderRef = collection(db, 'orders')
         const orderAdded = await addDoc(orderRef, objOrder)
 
         setOrderId(orderAdded.id)

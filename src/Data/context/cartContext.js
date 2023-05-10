@@ -30,7 +30,7 @@ export const CartProvider = ({ children }) => {
   const calculateTotalPrice = () => {
     let totalPrice = 0
     cart.forEach(item => {
-      totalPrice += item.price * item.quantity;
+      totalPrice += (item.quantity * item.price)
     });
     return totalPrice.toLocaleString('es-AR');
   };
@@ -58,7 +58,7 @@ export const CartProvider = ({ children }) => {
     return cart.some(prod => prod.id === itemId);
   }; 
   return (
-    <CartContext.Provider value={{ cart, totalQuantity, addItem, removeItem, updateQuantity, clearCart, calculateTotalPrice }}>
+    <CartContext.Provider value={{ cart, totalQuantity, totalPrice, addItem, removeItem, updateQuantity, clearCart, calculateTotalPrice }}>
       {children}
     </CartContext.Provider>
   );
