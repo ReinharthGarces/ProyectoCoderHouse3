@@ -1,6 +1,6 @@
 .carrito {
-  width: 90vw;
-  margin: 3vw;
+  width: 95vw;
+  margin: 2vw;
 }
 
 .total {
@@ -31,7 +31,7 @@
   margin: 10px 50px;
 }
 
-.comprar {
+.irA {
   font-size: 1.1rem;
   background-color: #4CAF50;
   box-shadow: 2px 2px gray;

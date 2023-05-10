@@ -5,14 +5,15 @@ import CartItem from '../CartItem/CartItem';
 import { Link } from 'react-router-dom';
 
 const Cart = () => { 
-  const { cart, clearCart, totalQuantity, total } = useContext(CartContext)
+  const { cart, clearCart, totalQuantity, calculateTotalPrice } = useContext(CartContext)
 
 
   if (totalQuantity === 0) {
     return (
       <div>
-        <h1>Carrito Vacio</h1>
-        <Link to = '/ProyectoCoderHouse3' className= "Option">Productos</Link>
+        <h1 className={styles.tittle}>Carrito Vacio</h1>
+        <img src='https://i.postimg.cc/jdyX6dWv/Carrito-Vacio.gif' className={styles.gif}/>
+        <Link to = '/ProyectoCoderHouse3' className={styles.irA}>ir al inicio...</Link>
       </div>
     )
   }
@@ -21,14 +22,14 @@ const Cart = () => {
   return(
     <div>
       <div className={styles.carrito}>
-      <h2 className={styles.tittle}>Productos en carrito</h2>
+      <h1 className={styles.tittle}>Productos en carrito</h1>
       { cart.map(p => <CartItem key={p.id} {...p }/>) }
-      <h3 className={styles.total}>Total: ${total}</h3>
+      <h3 className={styles.total}>Total: ${calculateTotalPrice()}</h3>
       </div>
 
       <div className={styles.buttons}>
       <button onClick= {() => clearCart()} className={styles.vaciarCarrito}>Vaciar carrito</button>
-      <Link to='/checkout' className={styles.comprar}>Ir a comprar</Link>
+      <Link to='/checkout' className={styles.irA}>Ir a comprar</Link>
       </div>
     </div>
   )
