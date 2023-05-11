@@ -74,7 +74,12 @@ const Checkout = () =>{
   }
   
   if(orderId) {
-    return <h1 className={styles.idDeOrden}><strong>El id de su orden es:</strong> {orderId}</h1>
+    return (
+    <div className={styles.graciasPorSuCompra}>
+    <h1 className={styles.idDeOrden}><strong>El id de su orden es:</strong> {orderId}</h1>
+    <img src='https://i.postimg.cc/9XtCVqw7/ok.gif' className={styles.gif} alt='Gracias por su Compra'></img>
+    </div>
+    )
   }
 
   return (
