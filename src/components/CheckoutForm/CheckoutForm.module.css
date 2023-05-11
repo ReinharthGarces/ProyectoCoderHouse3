@@ -1,0 +1,42 @@
+.datosPersonales {
+  max-width: 500px;
+  margin: 1vw auto;
+  display: flex;
+  justify-content: center;
+}
+
+.labelForm {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.inputForm {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.crearOrden {
+  background-color: #4CAF50;
+  box-shadow: 2px 2px gray;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1vw 5vw;
+}
+
+.crearOrden:hover {
+  background-color: #285430;
+}
+
+
+

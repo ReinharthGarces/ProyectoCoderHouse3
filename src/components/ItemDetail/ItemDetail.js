@@ -26,7 +26,6 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
       <picture>
         <img src={img} alt={name} className={styles.ItemImg}/>
       </picture>
-
       <section>
         <p className={styles.infoProducto}><strong>Categoria:</strong> {category}</p>
         <p className={styles.infoProducto}><strong>Descripcion:</strong>  {description}</p>

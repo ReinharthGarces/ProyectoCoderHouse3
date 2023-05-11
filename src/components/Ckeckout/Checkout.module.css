@@ -1,0 +1,30 @@
+.checkOut {
+  background-color: #E5D9B6;
+  width: 70vw;
+  margin: 5vw 10vw;
+  padding: 3vw;
+  border: 4px solid #285430;
+  border-radius: 40px;
+  box-shadow: 0 0 35px #285430;
+}
+
+.informacionCliente {
+  text-align: center;
+}
+
+.ordenEnProceso {
+  text-align: center;
+  margin: 3vw;
+  margin-bottom: 60vh;
+}
+
+.idDeOrden{
+  text-align: center;
+  margin: 3vw;
+  margin-bottom: 60vh;
+  color: rebeccapurple;
+}
+
+strong {
+  color: black;
+}

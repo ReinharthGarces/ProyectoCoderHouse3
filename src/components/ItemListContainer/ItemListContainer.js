@@ -39,7 +39,7 @@ const ItemListContainer = ( {greeting} ) => {
   
   if (loading) {
     return (
-    <div className={styles.loading}>Cargando...</div>
+    <h1 className={styles.loading}>Cargando...</h1>
     )
   }
 

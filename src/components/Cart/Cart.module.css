@@ -1,3 +1,9 @@
+.tittle {
+  text-align: center;
+  margin-bottom: 4vh;
+  font-size: 2rem;
+}
+
 .carrito {
   width: 95vw;
   margin: 2vw;
@@ -6,13 +12,8 @@
 .total {
   display: flex;
   justify-content: center;
+  font-size: 1.8rem;
   margin-right: 2vw;
-}
-
-.tittle {
-  text-align: center;
-  margin-bottom: 8vh;
-  font-size: 2rem;
 }
 
 .buttons{
@@ -28,7 +29,7 @@
   border-radius: 10px;
   padding: 0.5em;
   cursor: pointer;
-  margin: 10px 50px;
+  margin: 10px 30px;
 }
 
 .irA {
@@ -46,16 +47,27 @@
 /* Carrito Vacio */
 .emptyCart {
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 90vw;
-  height: 55vh;
-  margin: 4vw;
+  height: auto;
+  margin: 5vw;
+
+}
+.gif {
+  width: 70%;
+  height: auto;
+  margin: 3vh;
+  margin-bottom: 5vh;
+  border-radius: 200px;
+  box-shadow: 0 0 35px #285430;
+  animation:shake-left-right 0.8s linear both} @keyframes shake-left-right{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}
 }
 
 .irAHome {
   font-size: 1.1rem;
   background-color: #4CAF50;
-  box-shadow: 2px 2px gray;
+  box-shadow: 0 0 10px #285430;
   color: white;
   border: none;
   border-radius: 10px;

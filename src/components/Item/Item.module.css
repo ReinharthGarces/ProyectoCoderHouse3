@@ -5,15 +5,16 @@
   text-align: center;
   margin: 3vw;
   background-color: wheat;
-  border-radius: 10px;
   padding: 1vw;
   border: 2px solid #285430;
   width: 18vw;
   height: 55vh;
+  border-radius: 40px;
+  box-shadow: 0 0 35px #285430;
 }
 
 .ItemImg {
-  border-radius: 10px;
+  border-radius: 30px;
   border: 2px solid #285430;
   margin-bottom: 10px;
 }

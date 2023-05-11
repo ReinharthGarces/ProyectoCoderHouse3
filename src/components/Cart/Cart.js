@@ -12,7 +12,7 @@ const Cart = () => {
     return (
       <div className={styles.emptyCart}>
         <h1 className={styles.tittle}>Carrito Vacio</h1>
-        <img src='https://i.postimg.cc/jdyX6dWv/Carrito-Vacio.gif' className={styles.gif}></img>
+        <img src='https://i.postimg.cc/jdyX6dWv/Carrito-Vacio.gif' className={styles.gif} alt='Carrito vacio'></img>
         <Link to = '/ProyectoCoderHouse3' className={styles.irAHome}>ir al inicio...</Link>
       </div>
     )

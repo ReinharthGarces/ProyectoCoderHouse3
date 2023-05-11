@@ -1,3 +1,4 @@
+import styles from './Checkout.module.css'
 import { useState } from 'react'
 import { useContext } from "react";
 import { db } from '../../config/firebase'
@@ -39,7 +40,7 @@ const Checkout = () =>{
 
       docs.forEach(doc => {
         const dataDoc = doc.data()
-        const stockDb = dataDoc.stockDb
+        const stockDb = dataDoc.stock
 
         const productAddedToCart = cart.find(prod => prod.id === doc.id)
         const prodQuantity = productAddedToCart?.quantity
@@ -69,16 +70,16 @@ const Checkout = () =>{
     }
   }
   if(loading) {
-    return <h1>Orden en Proceso...</h1>
+    return <h1 className={styles.ordenEnProceso}>Orden en Proceso...</h1>
   }
   
   if(orderId) {
-    return <h1>El id de su orden es: {orderId}</h1>
+    return <h1 className={styles.idDeOrden}><strong>El id de su orden es:</strong> {orderId}</h1>
   }
 
   return (
-    <div>
-      <h1>Checkout</h1>
+    <div className={styles.checkOut}>
+      <h1 className={styles.informacionCliente}>Datos Personales</h1>
       <CheckoutForm onConfirm= {createOrder} />
     </div>
   )

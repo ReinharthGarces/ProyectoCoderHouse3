@@ -1,4 +1,4 @@
-import './CheckoutForm.module.css'
+import styles from './CheckoutForm.module.css'
 import { useState } from 'react'
 
 const CheckoutForm = ({ onConfirm }) => {
@@ -17,37 +17,37 @@ const CheckoutForm = ({ onConfirm }) => {
   }
 
   return (
-    <div className='Container'>
-      <form onSubmit={handleConfirm} className='Form'> 
-        <label className='Label'> <strong>Nombre:</strong> 
+    <div className={styles.datosPersonales}>
+      <form onSubmit={handleConfirm}> 
+        <label className={styles.labelForm}><strong>Nombre:</strong> 
           <input 
             placeholder='Ingrese su nombre...'
-            className='Input'
+            className={styles.inputForm}
             type='text'
             value={name}
             onChange={({target}) => setName(target.value)}
           />
         </label>
-        <label className='Label'> <strong>Telefono:</strong>
+        <label className={styles.labelForm}> <strong>Telefono:</strong>
           <input 
             placeholder='Ingrese numero telefonico...'
-            className='Input'
+            className={styles.inputForm}
             type='text'
             value={phone}
             onChange={({target}) => setPhone(target.value)}
           />
         </label>
-        <label className='Label'> <strong>Email:</strong>
+        <label className={styles.labelForm}> <strong>Email:</strong>
           <input 
             placeholder='Ingrese su email...'
-            className='Input'
+            className={styles.inputForm}
             type='email'
             value={email}
             onChange={({target}) => setEmail(target.value)}
           />
         </label>
         <div className='Label'>
-          <button type='submit' className='button'>Crear Orden</button>
+          <button type='submit' className={styles.crearOrden}>Crear Orden</button>
 
         </div>
       </form>

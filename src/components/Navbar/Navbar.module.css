@@ -16,9 +16,11 @@ nav {
   }
 
 nav h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   padding: 1.8vw;
   text-shadow: 1px 1px white;
+  font-family: 'Lilita One', cursive;
+  animation:tracking-in-contract 0.4s linear both} @keyframes tracking-in-contract{0%{letter-spacing:.6em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}
 }
 
 nav ul a{
@@ -42,3 +44,4 @@ nav ul a:hover {
   border: 2px solid #285430;
   margin: 5px;
 }
+

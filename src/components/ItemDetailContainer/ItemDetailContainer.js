@@ -33,13 +33,13 @@ const ItemDetailContainer = ( {greeting} ) => {
 
   if (loading) {
     return (
-      <div className={styles.loading}>Cargando...</div>
+      <h1 className={styles.loading}>Cargando...</h1>
     )
   }
 
   return (
     <div className={styles.ItemDetailContainer}>
-      <h2 className={styles.subTitulo}>{greeting}</h2>
+      <h1 className={styles.subTitulo}>{greeting}</h1>
       <ItemDetail {...product} />
     </div>
   )
