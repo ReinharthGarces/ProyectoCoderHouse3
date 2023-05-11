@@ -10,3 +10,12 @@ body {
 h1 {
   font-family: 'Lilita One', cursive;
 }
+
+a {
+  font-family: 'Lilita One', cursive;
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: 'Lilita One', cursive;
+}

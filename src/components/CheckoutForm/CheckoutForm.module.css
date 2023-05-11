@@ -30,12 +30,12 @@
   border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
-  font-weight: bold;
   margin: 1vw 5vw;
 }
 
 .crearOrden:hover {
   background-color: #285430;
+  border: 2px solid #4CAF50;
 }
 
 

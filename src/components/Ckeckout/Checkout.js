@@ -25,7 +25,6 @@ const Checkout = () =>{
         date: Timestamp.fromDate(new Date())
       }
 
-      console.log(objOrder)
       const batch = writeBatch(db)
 
       const outOfStock = []

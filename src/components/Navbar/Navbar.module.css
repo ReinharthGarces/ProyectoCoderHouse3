@@ -37,11 +37,13 @@ nav ul a{
 nav ul a:hover {
   background-color: rgba(95,141,78,1); 
   border: 2px solid #285430;;
+  border-radius: 50px;
 }
 
 .ActiveOption{
   background-color: rgba(95,141,78,1); 
   border: 2px solid #285430;
   margin: 5px;
+  border-radius: 50px;
 }
 

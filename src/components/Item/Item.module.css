@@ -30,6 +30,7 @@ section {
   height: 6vh;
   cursor: pointer;
   border: 2px solid #285430;
+  text-shadow: 1px 1px white;
 }
 footer {
   margin-top: 4vh;
